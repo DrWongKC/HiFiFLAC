@@ -50,6 +50,7 @@
             this.pauseButton.TabIndex = 1;
             this.pauseButton.Text = "Play/ Pause";
             this.pauseButton.UseVisualStyleBackColor = true;
+            this.pauseButton.Click += new System.EventHandler(this.pauseButton_Click);
             // 
             // Form1
             // 
@@ -60,6 +61,7 @@
             this.Controls.Add(this.openButton);
             this.Name = "Form1";
             this.Text = "HiFiFLAC";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
 
         }
