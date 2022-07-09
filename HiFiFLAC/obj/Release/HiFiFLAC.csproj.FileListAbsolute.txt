@@ -7,7 +7,6 @@ C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\Microsoft.Win
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.Asio.dll
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.Core.dll
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.dll
-C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.Flac.dll
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.Midi.dll
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.Wasapi.dll
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\NAudio.WinForms.dll
@@ -29,3 +28,5 @@ C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\obj\Release\HiFiFLAC.appl
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\obj\Release\HiFiFLAC.csproj.CopyComplete
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\obj\Release\HiFiFLAC.exe
 C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\obj\Release\HiFiFLAC.pdb
+C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\CSCore.dll
+C:\Users\Kai_W\Documents\My_Projects\HiFiFLAC\HiFiFLAC\bin\Release\CSCore.xml

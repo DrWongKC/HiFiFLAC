@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="HiFiFLAC.exe" version="1.0.0.0" publicKeyToken="89987452a6af973d" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="HiFiFLAC.exe" version="1.0.0.1" publicKeyToken="89987452a6af973d" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="HiFiFLAC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,14 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HiFiFLAC.exe" size="9184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CSCore.dll" size="531456">
+      <assemblyIdentity name="CSCore" version="1.2.1.2" publicKeyToken="5A08F2B6F4415DEA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6DUTkXHrDWO2tOArCZfKwEDALSlWSKJ11MjSiyNMjpQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HiFiFLAC.exe" size="15328">
       <assemblyIdentity name="HiFiFLAC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4ocNHld7qN0GnpPkGcudhkxo7mtA/7cZTFMCErTmh4s=</dsig:DigestValue>
+        <dsig:DigestValue>2GaIPZsAHMoFwUAbLtFp2MHDTfeUg/3pX4cqsK2s+Gg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,18 +110,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>8pfijHBh5ClPxlpr4WKdlRsElpUPAGDJGf2fMF8nqpE=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NAudio.Flac.dll" size="86016">
-      <assemblyIdentity name="NAudio.Flac" version="1.0.5702.29018" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZO0usMmN7rL8+DuwgGjEb3eU1ZZmYVhYbgr3HcD88Ec=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -194,4 +194,4 @@
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=DESKTOP-L40RHCI\Kai_W" issuerKeyHash="5908b1f0d8ba6821811d6f8d267517eda99099e9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aHOwQssnIlxEvXRJefN+iLJkNMSdRF3xkEKh/skop04=</DigestValue></Reference></SignedInfo><SignatureValue>iHqeszceOSun+8L+HPsD0LaVM4Xrc32LzU9M09FTbncRPQ139RFYC0cbJzahkvMgKViGhHXYRGOAqK8FQ3VKsKPV2RVyZU8qeQmiPHB+fS5cxX8eaJVIT6n5xne6uOsReQsaPEfjNf/DQ70Q6VQyACB8KWGuvRrzJOrPyuJIrw4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pd/JNyiVFT1AhGvpUXK/Jk4jyLVNKPekh4ykDkHcjlSweXsa0JAec0mx4vA4i2lQHoZ6m7UO0C3PekmsioraUT/vr+kDp67RKP6KR15154k6q7szJC6Kuj95uC86793D7olmVeps9VkhGLZSGM9SzLxZPudz225LKFlDc/jdEVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4ea728c9fea14290f15d449dc43464b2887ef3794974bd445c2227cb42b07368" Description="" Url=""><as:assemblyIdentity name="HiFiFLAC.exe" version="1.0.0.0" publicKeyToken="89987452a6af973d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-L40RHCI\Kai_W</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>n9U0pzeLC26WHFdcu+PA8vU/HK5FkJI+ykSIsx1vxyE=</DigestValue></Reference></SignedInfo><SignatureValue>WDnGwRugRP/0csLFZ2WZzrhcit1Vmxg35XNcHpKe3SvhkDUfmS3ZjcNjc4XPo0QdYiCnrsGkPFYFdzy+kCnX8s+IfXK/2L64h2kA1UiF8h6+2xaaFVZGOr4uiscASmb3msaJ74LJ9HrWo+ioCgbz+78sGQ+IuX8F1tbyY3PTd1M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pd/JNyiVFT1AhGvpUXK/Jk4jyLVNKPekh4ykDkHcjlSweXsa0JAec0mx4vA4i2lQHoZ6m7UO0C3PekmsioraUT/vr+kDp67RKP6KR15154k6q7szJC6Kuj95uC86793D7olmVeps9VkhGLZSGM9SzLxZPudz225LKFlDc/jdEVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQHsnVkyPxC75N+Z3hziFMTzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEwANAAwAFIASABDAEkAXABLAGEAaQBfAFcwHhcNMjIwNzA4MTY0MTA2WhcNMjMwNzA4MjI0MTA2WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEwANAAwAFIASABDAEkAXABLAGEAaQBfAFcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKXfyTcolRU9QIRr6VFyvyZOI8i1TSj3pIeMpA5B3I5UsHl7GtCQHnNJseLwOItpUB6Gepu1DtAtz3pJrIqK2lE/76/pA6eu0Sj+ikdedeeJOqu7MyQuiro/ebgvOu/dw+6JZlXqbPVZIRi2UhjPUsy8WT7nc9tuSyhZQ3P43RFRAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAjyejwPRjrKjuPbNyTw2rm0NfR266JCengk+PdLJwbFYxzwxFFEP1cgGboyZXPhJAhWy18aLrbKCHs0sZHwADjcZXmzVg22F2IvUjmwmha8EWgO2eqBwamOWBZduS6kE3rd/NC0zrjVipkAfyT7StMeIolX2TFYAKKTAwqRfH9LU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-L40RHCI\Kai_W" issuerKeyHash="5908b1f0d8ba6821811d6f8d267517eda99099e9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>91vu0GgGDRs+EFefZJZnn5Bj7FAL7EBNj2n+HCa8tjM=</DigestValue></Reference></SignedInfo><SignatureValue>LnFBkBRdwCIvYuByDr5XKdL4cHMApxFhns22RUPSEEvey3VvLjx0Iw5owYhYpWVtpiA4l7aQWGEhn6rg938PMcD8KeaUFUdSBYaKi72z/6xvZ7xciCeCrU8KE+7txRdAP/J6tHXN0oy6zAearcFE0JIJ3WaeVWsMcRhTLFC5zrI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pd/JNyiVFT1AhGvpUXK/Jk4jyLVNKPekh4ykDkHcjlSweXsa0JAec0mx4vA4i2lQHoZ6m7UO0C3PekmsioraUT/vr+kDp67RKP6KR15154k6q7szJC6Kuj95uC86793D7olmVeps9VkhGLZSGM9SzLxZPudz225LKFlDc/jdEVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="33b6bc261cfe698f4d40ec0b50ec63909f6796649f57103e1b0d0668d0ee5bf7" Description="" Url=""><as:assemblyIdentity name="HiFiFLAC.exe" version="1.0.0.1" publicKeyToken="89987452a6af973d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-L40RHCI\Kai_W</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kRu4tfehThdNpsLVRVvTLZWfunf3m+XdoPSc9gczS3A=</DigestValue></Reference></SignedInfo><SignatureValue>M005fPzWLtlUjhWg8kLaF1WWAETaTudJZHgysU/uFMnGxhp9dT/3Wk6RxVNoI77/JEF4t0LcoSRDJiynZ0MxtWYdVLBOL57ijz5yyrfHf8/dJvb3i1Wg5wjDvVARC0B++2JBKBuguC0KuH89q+PFm8fgEBC6EAzrcRz31JwlvY0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pd/JNyiVFT1AhGvpUXK/Jk4jyLVNKPekh4ykDkHcjlSweXsa0JAec0mx4vA4i2lQHoZ6m7UO0C3PekmsioraUT/vr+kDp67RKP6KR15154k6q7szJC6Kuj95uC86793D7olmVeps9VkhGLZSGM9SzLxZPudz225LKFlDc/jdEVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQHsnVkyPxC75N+Z3hziFMTzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEwANAAwAFIASABDAEkAXABLAGEAaQBfAFcwHhcNMjIwNzA4MTY0MTA2WhcNMjMwNzA4MjI0MTA2WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEwANAAwAFIASABDAEkAXABLAGEAaQBfAFcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKXfyTcolRU9QIRr6VFyvyZOI8i1TSj3pIeMpA5B3I5UsHl7GtCQHnNJseLwOItpUB6Gepu1DtAtz3pJrIqK2lE/76/pA6eu0Sj+ikdedeeJOqu7MyQuiro/ebgvOu/dw+6JZlXqbPVZIRi2UhjPUsy8WT7nc9tuSyhZQ3P43RFRAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAjyejwPRjrKjuPbNyTw2rm0NfR266JCengk+PdLJwbFYxzwxFFEP1cgGboyZXPhJAhWy18aLrbKCHs0sZHwADjcZXmzVg22F2IvUjmwmha8EWgO2eqBwamOWBZduS6kE3rd/NC0zrjVipkAfyT7StMeIolX2TFYAKKTAwqRfH9LU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
